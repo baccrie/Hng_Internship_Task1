@@ -3,7 +3,7 @@ from datetime import datetime
 
 app = FastAPI()
 date = datetime.now()
-utc = datetime.utcnow().isoformat()
+utc = datetime.utcnow().isoformat() + "Z"
 
 
 @app.get('/api')
